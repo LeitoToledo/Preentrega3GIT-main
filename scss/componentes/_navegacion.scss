@@ -1,0 +1,104 @@
+.navegacion {
+    display: flex;
+    align-items: center;
+    border: solid 3px #032002;
+    background-color: #1f691b;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+nav ul {display: flex;
+    margin-right: 50px;
+    text-align: center;
+    width: 100vw;
+    justify-content: space-around;
+
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav ul li a button {
+    color: #CCF5AC;
+    padding: 10px;
+    margin: 2px;
+    background-color: #59813a;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0f470d;
+}
+
+.menu-hamburguesa-nav {
+    display: none; /* Ocultamos el contenedor por defecto */
+}
+
+.icono-nav {
+    display: none; /* Ocultamos el ícono por defecto */
+}
+
+// Media q para mobile 
+
+@media (max-width: 480px) {
+    
+    .navegacion {flex-direction: column;
+        height: 100%;
+        text-align: center;
+    }
+
+    nav ul {display: none;
+        width: auto;
+        text-align: center;
+        }
+
+    nav ul li {
+        justify-content: center;
+        width: 100vw
+    }
+
+    nav ul li a button {;
+        font-size : 1rem;
+        padding : 5px;
+        margin : 0;
+    }
+
+    
+    .menu-hamburguesa-nav {
+        display: block; /* Mostramos el contenedor del menú hamburguesa */
+        margin-top: 10px; /* Ajusta según necesites */
+    }
+
+    .icono-nav {
+        display: block; /* Mostramos el ícono de la hamburguesa */
+        font-size: 1.5rem; /* Ajusta el tamaño del ícono según necesites */
+        cursor: pointer;
+        color: #CCF5AC; /* Color del ícono */
+    }
+
+    .navegacion ul.active {display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Estilo para los elementos de la lista */
+    .navegacion ul.active li {
+        margin: 2px 0;
+        
+
+    }
+
+    }

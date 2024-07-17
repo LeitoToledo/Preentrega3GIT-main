@@ -1,0 +1,197 @@
+.div-container {
+    display: flex;
+    height: 55vh;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    filter: blur(0.5px);
+    padding-left: 8vw;
+}
+
+.texto-container {
+    display: flex;
+    width: 70vw;
+    height: 70%;
+    color: #CCF5AC;
+    background-image: url(../assets/images/fondo\ tierra.jpg);
+    background-size: contain;
+    border: solid 3px #4CAF50;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 1;
+    padding: 10px;
+    box-shadow: 2px 2px 20px 5px rgba(0.0.0.0);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    margin: 0;
+}
+
+/* GRID CONTEINER */
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "articulo1 aside1"
+        "articulo2 aside2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+    gap: 10px;
+    margin-top: 2rem;
+
+}
+
+/* PRIMER IMAGEN */
+.articulo1 {
+    margin-top: 2rem;
+    grid-area: articulo1;
+}
+
+.contenedor-producto1 {
+    height: 100%;
+    width: 100%;
+}
+
+#producto1 {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* PRIMER PARRAFO  */
+.aside1 {
+    grid-area: aside1;
+}
+
+.contenedor-parrafo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#parrafo1 {
+    color: #000000;
+    text-align: start;
+    align-items: center;
+    font-size: clamp(1.2rem, 2vw + 1rem, 3rem);
+    margin: 0;
+}
+
+/* SEGUNDO PARRAFO */
+
+.articulo2 {
+    grid-area: articulo2;
+}
+
+.contenedor-parrafo2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#parrafo2 {
+    text-align: end;
+    align-items: center;
+    font-size: clamp(1.2rem, 2vw + 1rem, 3rem);
+    margin: 0;
+}
+
+/* SEGUNDA IMAGEN */
+
+.aside2 {
+    margin-bottom: 2rem;
+    grid-area: aside2;
+}
+
+.contenedor-producto2 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#producto2 {
+    margin-bottom: 120px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+// Media Q para mobile 
+
+
+@media (max-width: 480px) {
+
+.texto-container {
+    width: 90vw;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: start;
+    height: auto;
+}
+
+
+.contenedor-grid {
+    grid-template-areas:
+        "aside1"
+        "articulo1"
+        "articulo2"
+        "aside2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+
+.div-container {
+    margin-top: 15px;
+    padding-left: 2vw;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.articulo1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor-producto1 {
+    height: 80%;
+    width: 80%;
+}
+
+.aside2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-producto2 {
+    height: 80%;
+    width: 80%;
+}
+
+
+#parrafo1,
+#parrafo2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+}

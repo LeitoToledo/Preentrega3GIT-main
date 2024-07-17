@@ -1,0 +1,74 @@
+.titulo-conteiner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    line-height: 1;
+    padding: 10px;
+    box-shadow: 2px 2px 20px 5px rgba(0.0.0.0);
+}
+
+.titulo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #0b5208;
+}
+
+.plantas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.plantitas {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+.plantitas img {
+    width: 100%;
+    background-color: white;
+    border: none;
+}
+
+.info:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.1;
+    border: none;
+}
+
+.nombre-planta {
+    width: 100%;
+    color: #111002;
+}
+
+.precio-planta {
+    width: 100%;
+    color: #111002;
+}
+
+// Media q para mobile 
+
+@media (max-width: 768px) {
+    .plantas {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .plantitas {
+        grid-template-columns: 1fr;
+
+    }
+}
